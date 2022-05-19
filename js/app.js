@@ -35,7 +35,7 @@ const showTemperature = Value =>  cityTemperature.textContent = Value
 const showCityWeather = async event => {
   event.preventDefault()
   
-  let inputValue = inputSearch.value.trim()
+  const inputValue = inputSearch.value.trim()
   if(!inputValue){
     alert('Digite o nome da cidade')
     weatherForm.reset()
